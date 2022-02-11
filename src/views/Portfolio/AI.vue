@@ -27,11 +27,32 @@
           </v-flex>
         </template>
         <v-card v-if="video.dialog">
-          <plyr>
+          <v-card-title class="cardTitle">
+            {{video.title}}
+          </v-card-title>
+          <v-card-text>
+            <h3>Description</h3>
+          </v-card-text>
+          <v-card-text>
+            <p> Ceci est la description du projet sur plusieurs ligne,oui oui vous lisez bien</p>
+          </v-card-text>
+          <v-card-text>
+            <h3>Demo</h3>
+          </v-card-text>
+          <plyr class="vid">
             <div class="plyr__video-embed">
               <iframe :src="video.href" allowfullscreen allowtransparency allow="autoplay"></iframe>
             </div>
           </plyr>
+          <v-card-text>
+            <h3 class="headline mb-0">
+              <span>Technology</span>
+            </h3>
+            <v-chip color="green" text-color="white">{{video.tech.tech1}}</v-chip>
+            <v-chip color="green" text-color="white">{{video.tech.tech2}}</v-chip>
+            <v-chip color="green" text-color="white">{{video.tech.tech3}}</v-chip>
+            <v-chip color="green" text-color="white">{{video.tech.tech4}}</v-chip>
+          </v-card-text>
         </v-card>
       </v-dialog>
     </v-layout>
@@ -75,99 +96,111 @@ export default {
       videos: [
         {
           dialog: false,
-          title: "Vila Design Promo video",
-          href: "https://www.youtube.com/embed/XP8j7NA_wzc",
-          type: "text/html",
-          youtube: "XP8j7NA_wzc",
-          poster: "https://img.youtube.com/vi/XP8j7NA_wzc/maxresdefault.jpg"
+          title: 'VilaShirts Logo',
+          poster: 'https://i.imgur.com/QEnmqcE.png',
+          href: 'https://www.youtube.com/embed/XP8j7NA_wzc',
+          tech: {
+            tech1: 'VUE',
+            tech2: 'GraphQL',
+            tech3: 'Axios',
+            tech4: 'JavaScript'
+          }
         },
         {
           dialog: false,
-          title: "Pushartist Promo video",
-          href: "https://www.youtube.com/embed/PZnn1fDUb6U",
-          type: "text/html",
-          youtube: "PZnn1fDUb6U",
-          poster: "https://img.youtube.com/vi/PZnn1fDUb6U/maxresdefault.jpg"
+          title: 'BlackBird Property Group Logo',
+          poster: 'https://i.imgur.com/b37FfUU.jpg',
+          href: 'https://www.youtube.com/embed/XP8j7NA_wzc',
+          tech: {
+            tech1: 'VUE',
+            tech2: 'GraphQL',
+            tech3: 'Axios',
+            tech4: 'JavaScript'
+          }
         },
         {
           dialog: false,
-          title: "Unbroken Designs Instagram Promo video",
-          href: "https://www.youtube.com/embed/KfxHI3vwALk",
-          type: "text/html",
-          youtube: "KfxHI3vwALk",
-          poster: "https://img.youtube.com/vi/KfxHI3vwALk/maxresdefault.jpg"
+          title: 'TeeLock Consulting Logo',
+          poster: 'https://i.imgur.com/XSo4bmw.jpg',
+          href: 'https://www.youtube.com/embed/XP8j7NA_wzc',
+          tech: {
+            tech1: 'VUE',
+            tech2: 'GraphQL',
+            tech3: 'Axios',
+            tech4: 'JavaScript'
+          }
         },
         {
           dialog: false,
-          title: "EEVOY APP Promo",
-          href: "https://www.youtube.com/embed/JEhpsP75STk",
-          type: "text/html",
-          youtube: "JEhpsP75STk",
-          poster: "https://i.imgur.com/7CLqR2o.png"
+          title: 'SEA||WA||MMXI',
+          poster: 'https://i.imgur.com/thxUnTH.jpg',
+          href: 'https://www.youtube.com/embed/XP8j7NA_wzc',
+          tech: {
+            tech1: 'VUE',
+            tech2: 'GraphQL',
+            tech3: 'Axios',
+            tech4: 'JavaScript'
+          }
         },
         {
           dialog: false,
-          title: "Patty Boland's Party video",
-          href: "https://www.youtube.com/embed/5zB4FIkhFHk",
-          type: "text/html",
-          youtube: "5zB4FIkhFHk",
-          poster: "https://img.youtube.com/vi/5zB4FIkhFHk/maxresdefault.jpg"
+          title: 'Alpine365 Logo',
+          poster: 'https://i.imgur.com/LOzW21e.jpg',
+          href: 'https://www.youtube.com/embed/XP8j7NA_wzc',
+          tech: {
+            tech1: 'VUE',
+            tech2: 'GraphQL',
+            tech3: 'Axios',
+            tech4: 'JavaScript'
+          }
         },
         {
           dialog: false,
-          title: "Montenegro Summer 2017",
-          href: "https://www.youtube.com/embed/kZahccWTpGc",
-          type: "text/html",
-          youtube: "kZahccWTpGc",
-          poster: "https://i.imgur.com/4yTFAlM.jpg"
+          title: 'Josefine Product Pack',
+          poster: 'https://i.imgur.com/TrthgRN.jpg',
+          href: 'https://www.youtube.com/embed/XP8j7NA_wzc',
+          tech: {
+            tech1: 'VUE',
+            tech2: 'GraphQL',
+            tech3: 'Axios',
+            tech4: 'JavaScript'
+          }
         },
         {
           dialog: false,
-          title: "VilaShirts Promo video",
-          href: "https://www.youtube.com/embed/SZVMKtEORRw",
-          type: "text/html",
-          youtube: "SZVMKtEORRw",
-          poster: "https://i.imgur.com/POCbX1B.jpg"
+          title: 'Next Party Flayer',
+          poster: 'https://i.imgur.com/tYjfL2d.jpg',
+          href: 'https://www.youtube.com/embed/XP8j7NA_wzc',
+          tech: {
+            tech1: 'VUE',
+            tech2: 'GraphQL',
+            tech3: 'Axios',
+            tech4: 'JavaScript'
+          }
         },
         {
           dialog: false,
-          title: "Albania Durres Summer 2018",
-          href: "https://www.youtube.com/embed/jd9pDFaRDKI",
-          type: "text/html",
-          youtube: "jd9pDFaRDKI",
-          poster: "https://img.youtube.com/vi/jd9pDFaRDKI/maxresdefault.jpg"
+          title: 'VilaShirts T-Shirts',
+          poster: 'https://i.imgur.com/ULuRuFB.jpg',
+          href: 'https://www.youtube.com/embed/XP8j7NA_wzc',
+          tech: {
+            tech1: 'VUE',
+            tech2: 'GraphQL',
+            tech3: 'Axios',
+            tech4: 'JavaScript'
+          }
         },
         {
           dialog: false,
-          title: "Matricar Instagram Promo video",
-          href: "https://www.youtube.com/embed/S-2hNuuwmpY",
-          type: "text/html",
-          youtube: "S-2hNuuwmpY",
-          poster: "https://img.youtube.com/vi/S-2hNuuwmpY/maxresdefault.jpg"
-        },
-        {
-          dialog: false,
-          title: "Vila Design Glitch Logo Animation",
-          href: "https://www.youtube.com/embed/SrX8T2G6bew",
-          type: "text/html",
-          youtube: "SrX8T2G6bew",
-          poster: "https://img.youtube.com/vi/SrX8T2G6bew/maxresdefault.jpg"
-        },
-        {
-          dialog: false,
-          title: "Splash logo animation",
-          href: "https://www.youtube.com/embed/vBAZpwtq08I",
-          type: "text/html",
-          youtube: "vBAZpwtq08I",
-          poster: "https://i.imgur.com/3jK0rTs.png"
-        },
-        {
-          dialog: false,
-          title: "Julie Lindh CBD Infusion Facial",
-          href: "https://www.youtube.com/embed/9qFQMV9IJ9I",
-          type: "text/html",
-          youtube: "9qFQMV9IJ9I",
-          poster: "https://img.youtube.com/vi/9qFQMV9IJ9I/maxresdefault.jpg"
+          title: 'BAB Coin',
+          poster: 'https://i.imgur.com/YU52AVB.jpg',
+          href: 'https://www.youtube.com/embed/XP8j7NA_wzc',
+          tech: {
+            tech1: 'VUE',
+            tech2: 'GraphQL',
+            tech3: 'Axios',
+            tech4: 'JavaScript'
+          }
         }
       ]
     };
@@ -177,4 +210,13 @@ export default {
 
 <style  scoped>
 @import "../../../node_modules/vue-plyr/dist/vue-plyr.css";
+.cardTitle{
+  text-align: center;
+  color: green ;
+  font-size: x-large;
+  justify-content: center;
+}
+.vid{
+  text-align: center;
+}
 </style>

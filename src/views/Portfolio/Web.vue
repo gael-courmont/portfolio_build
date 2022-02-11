@@ -26,7 +26,23 @@
           </v-flex>
         </template>
         <v-card v-if="project.dialog">
-          <v-img :src="project.poster"></v-img>
+          <v-card-title class="cardTitle">
+            {{project.title}}
+          </v-card-title>
+          <v-card-text>
+            <h3>Description</h3>
+          </v-card-text>
+          <v-card-text>
+            <p> Ceci est la description du projet sur plusieurs ligne,oui oui vous lisez bien</p>
+          </v-card-text>
+          <v-card-text>
+            <h3>Demo</h3>
+          </v-card-text>
+          <plyr class="vid">
+            <div class="plyr__video-embed">
+              <iframe :src="project.href" allowfullscreen allowtransparency allow="autoplay"></iframe>
+            </div>
+          </plyr>
           <v-card-text>
             <h3 class="headline mb-0">
               <span>Technology</span>
@@ -36,14 +52,6 @@
             <v-chip color="green" text-color="white">{{project.tech.tech3}}</v-chip>
             <v-chip color="green" text-color="white">{{project.tech.tech4}}</v-chip>
           </v-card-text>
-          <v-card-actions>
-            <v-btn flat large dark color="green" :href="project.git" target="_blank">
-              <v-icon left>fab fa-github</v-icon>GitHub
-            </v-btn>
-            <v-btn large flat dark color="green" :href="project.demo" target="_blank">
-              <v-icon left>fas fa-desktop</v-icon>Demo
-            </v-btn>
-          </v-card-actions>
         </v-card>
       </v-dialog>
     </v-layout>
@@ -82,122 +90,113 @@ export default {
     return {
       dialog: false,
       projects: [
-         {
+        {
           dialog: false,
-          title: "Euphoric Voyage",
-          git: "https://github.com/EldinZaimovic/euphoric-voyage",
-          demo: "https://www.euphoric-voyage.com/",
+          title: 'VilaShirts Logo',
+          poster: 'https://i.imgur.com/QEnmqcE.png',
+          href: 'https://www.youtube.com/embed/XP8j7NA_wzc',
           tech: {
-            tech1: "Gatsby",
-            tech2: "JavaScript",
-            tech3: "SCSS",
-            tech4: "Markdown"
-          },
-          poster: "https://i.imgur.com/9Ww2bvm.png"
+            tech1: 'VUE',
+            tech2: 'GraphQL',
+            tech3: 'Axios',
+            tech4: 'JavaScript'
+          }
         },
         {
           dialog: false,
-          title: "This Site",
-          git: "https://github.com/EldinZaimovic/Eldin-Space-Vue",
-          demo: "https://eldin.space/",
+          title: 'BlackBird Property Group Logo',
+          poster: 'https://i.imgur.com/b37FfUU.jpg',
+          href: 'https://www.youtube.com/embed/XP8j7NA_wzc',
           tech: {
-            tech1: "VUE",
-            tech2: "Storyblok",
-            tech3: "HTML",
-            tech4: "JavaScript"
-          },
-          poster: "https://i.imgur.com/sGUofpv.png"
+            tech1: 'VUE',
+            tech2: 'GraphQL',
+            tech3: 'Axios',
+            tech4: 'JavaScript'
+          }
         },
         {
           dialog: false,
-          title: "Frontend Developer at Brandly.com",
-          git: "https://cdn.neow.in/news/images/uploaded/2018/11/1543476286_cybersecurity.jpg",
-          demo: "https://www.brandly.com/",
+          title: 'TeeLock Consulting Logo',
+          poster: 'https://i.imgur.com/XSo4bmw.jpg',
+          href: 'https://www.youtube.com/embed/XP8j7NA_wzc',
           tech: {
-            tech1: "VUE",
-            tech2: "SCSS",
-            tech3: "HTML",
-            tech4: "JavaScript"
-          },
-          poster: "https://i.imgur.com/nVqtTAf.png"
+            tech1: 'VUE',
+            tech2: 'GraphQL',
+            tech3: 'Axios',
+            tech4: 'JavaScript'
+          }
         },
         {
           dialog: false,
-          title: "Digital Madness Test",
-          git: "https://github.com/EldinZaimovic/Digital-Madness-test",
-          demo: "https://digital-madness-test.netlify.com/",
+          title: 'SEA||WA||MMXI',
+          poster: 'https://i.imgur.com/thxUnTH.jpg',
+          href: 'https://www.youtube.com/embed/XP8j7NA_wzc',
           tech: {
-            tech1: "VUE",
-            tech2: "CSS",
-            tech3: "HTML",
-            tech4: "JavaScript"
-          },
-          poster: "https://i.imgur.com/GOIIL06.png"
+            tech1: 'VUE',
+            tech2: 'GraphQL',
+            tech3: 'Axios',
+            tech4: 'JavaScript'
+          }
         },
         {
           dialog: false,
-          title: "Snowball Coding Challenge",
-          git: "https://github.com/EldinZaimovic/SnowBall-Project",
-          demo: "https://snowball-test.netlify.com/",
+          title: 'Alpine365 Logo',
+          poster: 'https://i.imgur.com/LOzW21e.jpg',
+          href: 'https://www.youtube.com/embed/XP8j7NA_wzc',
           tech: {
-            tech1: "VUE",
-            tech2: "GraphQL",
-            tech3: "Axios",
-            tech4: "JavaScript"
-          },
-          poster: "https://i.imgur.com/rXHBs36.png"
+            tech1: 'VUE',
+            tech2: 'GraphQL',
+            tech3: 'Axios',
+            tech4: 'JavaScript'
+          }
         },
         {
           dialog: false,
-          title: "IBM Coding Challenge - Films Location",
-          git: "https://github.com/EldinZaimovic/Film-Location-List",
-          demo: "https://film-location-ibm-cc.netlify.com/",
+          title: 'Josefine Product Pack',
+          poster: 'https://i.imgur.com/TrthgRN.jpg',
+          href: 'https://www.youtube.com/embed/XP8j7NA_wzc',
           tech: {
-            tech1: "VUE",
-            tech2: "Lodash",
-            tech3: "HTML",
-            tech4: "JavaScript"
-          },
-          poster: "https://i.imgur.com/kCN1CFH.png"
+            tech1: 'VUE',
+            tech2: 'GraphQL',
+            tech3: 'Axios',
+            tech4: 'JavaScript'
+          }
         },
         {
           dialog: false,
-          title: "Stock Trader",
-          git: "https://github.com/EldinZaimovic/Stock-Trader",
-          demo: "https://stock-trader-eldin.netlify.com/",
+          title: 'Next Party Flayer',
+          poster: 'https://i.imgur.com/tYjfL2d.jpg',
+          href: 'https://www.youtube.com/embed/XP8j7NA_wzc',
           tech: {
-            tech1: "VUE",
-            tech2: "Vuex",
-            tech3: "Firebase",
-            tech4: "JavaScript"
-          },
-          poster: "https://i.imgur.com/wK5dqP7.png"
+            tech1: 'VUE',
+            tech2: 'GraphQL',
+            tech3: 'Axios',
+            tech4: 'JavaScript'
+          }
         },
         {
           dialog: false,
-          title: "Riders Share Newsleter",
-          git: "",
-          demo: "https://imgur.com/zTMJhGk",
+          title: 'VilaShirts T-Shirts',
+          poster: 'https://i.imgur.com/ULuRuFB.jpg',
+          href: 'https://www.youtube.com/embed/XP8j7NA_wzc',
           tech: {
-            tech1: "HTML",
-            tech2: "CSS",
-            tech3: "MailChimp",
-            tech4: "JavaScript"
-          },
-          poster: "https://i.imgur.com/zTMJhGk.jpg"
+            tech1: 'VUE',
+            tech2: 'GraphQL',
+            tech3: 'Axios',
+            tech4: 'JavaScript'
+          }
         },
         {
           dialog: false,
-          title: "My Old Web Portfolio",
-          git: "https://github.com/EldinZaimovic/EldinZaimovic.github.io",
-          demo: "https://eldinzaimovic.github.io/index.html",
+          title: 'BAB Coin',
+          poster: 'https://i.imgur.com/YU52AVB.jpg',
+          href: 'https://www.youtube.com/embed/XP8j7NA_wzc',
           tech: {
-            tech1: "HTML",
-            tech2: "CSS",
-            tech3: "JavaScript",
-            tech4: "jQuery"
-          },
-          poster: "https://i.imgur.com/AW7CXD5.jpg"
+            tech1: 'VUE',
+            tech2: 'GraphQL',
+            tech3: 'Axios',
+            tech4: 'JavaScript'
+          }
         }
       ]
     };
@@ -206,4 +205,13 @@ export default {
 </script>
 
 <style  scoped>
+.cardTitle{
+  text-align: center;
+  color: green ;
+  font-size: x-large;
+  justify-content: center;
+}
+.vid{
+  text-align: center;
+}
 </style>
