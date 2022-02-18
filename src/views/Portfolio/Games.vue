@@ -17,11 +17,11 @@
             <v-card hover flat color="transparent">
               <v-img
                 :src="game.poster"
-                height="230"
+                aspect-ratio="1.7778"
                 :alt="game.title"
                 lazy-src="https://cdn.dribbble.com/users/503653/screenshots/3143656/fluid-loader.gif"
               ></v-img>
-              <v-card-title primary-title class="justify-center">{{game.title}}</v-card-title>
+              <v-card-title primary-title class="cardTitle">{{game.title}}</v-card-title>
             </v-card>
           </v-flex>
         </template>
@@ -30,10 +30,13 @@
             {{game.title}}
           </v-card-title>
           <v-card-text>
-            <h3>Description</h3>
+            <h3>Link</h3>
           </v-card-text>
           <v-card-text>
-            <span>{{game.link}}</span>
+            <a :href="game.link">{{game.link}}</a>
+          </v-card-text>
+          <v-card-text>
+            <h3>Description</h3>
           </v-card-text>
           <v-card-text>
               <p>{{game.description}}</p>
@@ -41,10 +44,13 @@
           <v-card-text>
             <h3>Demo</h3>
           </v-card-text>
-          <v-card-media>
+          <v-card-media v-if="game.demo">
             <div class="iframe-wrapper">
                 <iframe :src="game.href" allowfullscreen allowtransparency allow="autoplay" ></iframe>
             </div>
+          </v-card-media>
+          <v-card-media v-if="!game.demo">
+            <v-img contain max-height="500px" :src="game.poster"></v-img>
           </v-card-media>
           <v-card-text>
               <h3 class="headline mb-0">
@@ -62,7 +68,6 @@
 </template>
 
 <script>
-import { PlyrVideo } from 'vue-plyr'
 
 export default {
   metaInfo: {
@@ -87,7 +92,7 @@ export default {
       }
     ]
   },
-  components: { plyr: PlyrVideo },
+
   data () {
     return {
       dialog: false,
@@ -95,110 +100,57 @@ export default {
         {
           dialog: false,
           title: 'The Fireflies Express',
-          poster: 'https://ggj.s3.amazonaws.com/styles/game_sidebar__wide/featured_image/2022/01/427346/affice_2.png?itok=Ex1vLdDL&timestamp=1643547624',
+          poster: 'https://i.imgur.com/pqxqFIL.png',
+          demo: true,
           href: 'https://youtube.com/embed/KYu0GYQfNEE',
-          description: 'Face the dangers of an eerie train with the help of an angel and a demon, and try to reach the exit ! Game made during the Global Game Jam 2022 by a team of 6.',
+          description: 'Face the dangers of an eerie train with the help of an angel and a demon, and try to reach the exit ! Game made during the Global Game Jam 2022 by a team of 6. 2 graphic designer, 3 developers and 1 game designer',
           link: 'https://globalgamejam.org/2022/games/fireflies-express-1',
           role: 'Unity Developper',
           tech: {
             tech1: 'UNITY',
-            tech2: 'PHOTOSHOP'
+            tech2: '2D'
           }
         },
         {
           dialog: false,
-          title: 'BlackBird Property Group Logo',
-          poster: 'https://i.imgur.com/b37FfUU.jpg',
-          href: 'https://www.youtube.com/embed/XP8j7NA_wzc',
+          title: 'Pool game',
+          poster: 'https://i.imgur.com/Yo3nFht.jpg',
+          demo: true,
+          href: 'https://youtube.com/embed/imet3Kkd9sQ',
+          description: 'This project is a small and simple pool game made by myself and 2 other student at ISEN during an end of course project. The goal was to use every aspect of unity 3D development we learnt during that session',
+          link: 'https://github.com/gael-courmont/Unity_module',
+          role: 'Unity Developer',
           tech: {
-            tech1: 'VUE',
-            tech2: 'GraphQL',
-            tech3: 'Axios',
-            tech4: 'JavaScript'
+            tech1: 'UNITY',
+            tech2: '3D'
           }
         },
         {
           dialog: false,
-          title: 'TeeLock Consulting Logo',
-          poster: 'https://i.imgur.com/XSo4bmw.jpg',
-          href: 'https://www.youtube.com/embed/XP8j7NA_wzc',
+          title: 'Chicken shooter VR',
+          poster: 'https://i.imgur.com/isbVJv8.png',
+          demo: true,
+          href: 'https://youtube.com/embed/aicG3RF1kxE',
+          description: 'A bunch of chicken is invading the far west. Pick up your colt and shoot them before they peck all your wheat. This game was made in unity VR by myself and 2 other students during an end of course project.',
+          link: 'https://github.com/gael-courmont/vr_fps',
+          role: 'Unity Developper',
           tech: {
-            tech1: 'VUE',
-            tech2: 'GraphQL',
-            tech3: 'Axios',
-            tech4: 'JavaScript'
+            tech1: 'UNITY',
+            tech2: 'VR'
           }
         },
         {
           dialog: false,
-          title: 'SEA||WA||MMXI',
-          poster: 'https://i.imgur.com/thxUnTH.jpg',
-          href: 'https://www.youtube.com/embed/XP8j7NA_wzc',
+          title: 'Gurdil',
+          poster: 'https://i.imgur.com/wv2v2bv.jpg',
+          demo: false,
+          href: '',
+          description: 'As a personal project i am developping a hack an slash type of game since it is one of my favorite type of game. I started devellopping it in early 2022.',
+          link: 'https://github.com/gael-courmont/Gurdil',
+          role: 'Unity Developper',
           tech: {
-            tech1: 'VUE',
-            tech2: 'GraphQL',
-            tech3: 'Axios',
-            tech4: 'JavaScript'
-          }
-        },
-        {
-          dialog: false,
-          title: 'Alpine365 Logo',
-          poster: 'https://i.imgur.com/LOzW21e.jpg',
-          href: 'https://www.youtube.com/embed/XP8j7NA_wzc',
-          tech: {
-            tech1: 'VUE',
-            tech2: 'GraphQL',
-            tech3: 'Axios',
-            tech4: 'JavaScript'
-          }
-        },
-        {
-          dialog: false,
-          title: 'Josefine Product Pack',
-          poster: 'https://i.imgur.com/TrthgRN.jpg',
-          href: 'https://www.youtube.com/embed/XP8j7NA_wzc',
-          tech: {
-            tech1: 'VUE',
-            tech2: 'GraphQL',
-            tech3: 'Axios',
-            tech4: 'JavaScript'
-          }
-        },
-        {
-          dialog: false,
-          title: 'Next Party Flayer',
-          poster: 'https://i.imgur.com/tYjfL2d.jpg',
-          href: 'https://www.youtube.com/embed/XP8j7NA_wzc',
-          tech: {
-            tech1: 'VUE',
-            tech2: 'GraphQL',
-            tech3: 'Axios',
-            tech4: 'JavaScript'
-          }
-        },
-        {
-          dialog: false,
-          title: 'VilaShirts T-Shirts',
-          poster: 'https://i.imgur.com/ULuRuFB.jpg',
-          href: 'https://www.youtube.com/embed/XP8j7NA_wzc',
-          tech: {
-            tech1: 'VUE',
-            tech2: 'GraphQL',
-            tech3: 'Axios',
-            tech4: 'JavaScript'
-          }
-        },
-        {
-          dialog: false,
-          title: 'BAB Coin',
-          poster: 'https://i.imgur.com/YU52AVB.jpg',
-          href: 'https://www.youtube.com/embed/XP8j7NA_wzc',
-          tech: {
-            tech1: 'VUE',
-            tech2: 'GraphQL',
-            tech3: 'Axios',
-            tech4: 'JavaScript'
+            tech1: 'UNITY',
+            tech2: '3D'
           }
         }
       ]
