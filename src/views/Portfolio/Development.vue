@@ -35,15 +35,12 @@
           <v-card-text>
             <p> Ceci est la description du projet sur plusieurs ligne,oui oui vous lisez bien</p>
           </v-card-text>
+          <v-card-media>
+            <v-img contain max-height="500px" :src="project.poster"></v-img>
+          </v-card-media>
           <v-card-text>
             <h3>Demo</h3>
-          </v-card-text>
-          <plyr class="vid">
-            <div class="plyr__video-embed">
-              <iframe :src="project.href" allowfullscreen allowtransparency allow="autoplay"></iframe>
-            </div>
-          </plyr>
-          <v-card-text>
+
             <h3 class="headline mb-0">
               <span>Technology</span>
             </h3>
@@ -61,32 +58,28 @@
 <script>
 export default {
   metaInfo: {
-    title: "Web Portfolio",
+    title: 'Diverse Portfolio',
     titleTemplate: "%s ← Eldin's Space",
     meta: [
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
-        name: "description",
+        name: 'description',
         content:
-          "Eldin Zaimovic's Web Portfolio Vue Vue.js Nuxt Nuxt.js HTML CSS Vuetify Axios GraphQL JavaScript Web Developer Front-End Frontend Designer App Responsive"
+          'Gael courmont diverse portefolio'
       },
-      { charset: "utf-8" },
-      { property: "og:title", content: "Eldin' Space" },
-      { property: "og:site_name", content: "Eldin' Space" },
-      { property: "og:type", content: "website" },
-      { property: "og:url", content: "https://eldin.space" },
+      { charset: 'utf-8' },
+      { property: 'og:title', content: "Eldin' Space" },
+      { property: 'og:site_name', content: "Eldin' Space" },
+      { property: 'og:type', content: 'website' },
+      { property: 'og:url', content: 'https://eldin.space' },
       {
-        property: "og:image",
-        content: "https://i.imgur.com/Dcz2PGx.jpg"
-      },
-      {
-        property: "og:description",
+        property: 'og:description',
         content:
-          "Eldin Zaimovic's Web Portfolio Vue Vue.js Nuxt Nuxt.js HTML CSS Vuetify Axios GraphQL JavaScript Web Developer Front-End Frontend Designer App Responsive"
+          'Gael courmont diverse portfolio'
       }
     ]
   },
-  data() {
+  data () {
     return {
       dialog: false,
       projects: [
@@ -199,9 +192,9 @@ export default {
           }
         }
       ]
-    };
+    }
   }
-};
+}
 </script>
 
 <style  scoped>

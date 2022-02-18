@@ -39,11 +39,11 @@
           <v-card-text>
             <h3>Demo</h3>
           </v-card-text>
-          <plyr class="vid">
-            <div class="plyr__video-embed">
-              <iframe :src="video.href" allowfullscreen allowtransparency allow="autoplay"></iframe>
+          <v-card-media>
+            <div class="iframe-wrapper">
+              <iframe :src="video.href" allowfullscreen allowtransparency allow="autoplay" ></iframe>
             </div>
-          </plyr>
+          </v-card-media>
           <v-card-text>
             <h3 class="headline mb-0">
               <span>Technology</span>
@@ -60,37 +60,32 @@
 </template>
 
 <script>
-import { PlyrVideo } from "vue-plyr";
+import { PlyrVideo } from 'vue-plyr'
 
 export default {
   metaInfo: {
-    title: "Video Portfolio",
-    titleTemplate: "%s ← Eldin's Space",
+    title: 'Video Portfolio',
+    titleTemplate: "%s ← Gael's Space",
     meta: [
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
-        name: "description",
+        name: 'description',
         content:
-          "Eldin Zaimovic's Services Adobe Premire After Effects Video Ad's Social Media Logo Animation Instagram Facebook Video Editing Advetising"
+          "Gael Courmont's AI portfolio"
       },
-      { charset: "utf-8" },
-      { property: "og:title", content: "Eldin' Space" },
-      { property: "og:site_name", content: "Eldin' Space" },
-      { property: "og:type", content: "website" },
-      { property: "og:url", content: "https://eldin.space" },
+      { charset: 'utf-8' },
+      { property: 'og:title', content: "Gael' Space" },
+      { property: 'og:site_name', content: "Gael' Space" },
+      { property: 'og:type', content: 'website' },
+      { property: 'og:url', content: 'https://Gael.space' },
       {
-        property: "og:image",
-        content: "https://i.imgur.com/Dcz2PGx.jpg"
-      },
-      {
-        property: "og:description",
-        content:
-          "Eldin Zaimovic's Services Adobe Premire After Effects Video Ad's Social Media Logo Animation Instagram Facebook Video Editing Advetising"
+        property: 'og:description',
+        content: "Gael Courmont's AI portfolio"
       }
     ]
   },
   components: { plyr: PlyrVideo },
-  data() {
+  data () {
     return {
       dialog: false,
       videos: [
@@ -203,9 +198,9 @@ export default {
           }
         }
       ]
-    };
+    }
   }
-};
+}
 </script>
 
 <style  scoped>
@@ -216,7 +211,19 @@ export default {
   font-size: x-large;
   justify-content: center;
 }
-.vid{
-  text-align: center;
+.iframe-wrapper {
+  position: relative;
+  height: 0;
+  padding-top: 56.25%;
+  overflow: hidden;
+  margin: 3%;
+}
+
+.iframe-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 </style>

@@ -41,11 +41,11 @@
           <v-card-text>
             <h3>Demo</h3>
           </v-card-text>
-          <plyr class="vid">
-            <div class="plyr__video-embed">
-              <iframe :src="game.href" allowfullscreen allowtransparency allow="autoplay"></iframe>
+          <v-card-media>
+            <div class="iframe-wrapper">
+                <iframe :src="game.href" allowfullscreen allowtransparency allow="autoplay" ></iframe>
             </div>
-          </plyr>
+          </v-card-media>
           <v-card-text>
               <h3 class="headline mb-0">
                 <span>Technology</span>
@@ -66,28 +66,24 @@ import { PlyrVideo } from 'vue-plyr'
 
 export default {
   metaInfo: {
-    title: 'Graphic Portfolio ',
-    titleTemplate: "%s ← Eldin's Space",
+    title: 'Games Portfolio ',
+    titleTemplate: "%s ← Gael's Space",
     meta: [
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
         name: 'description',
         content:
-          "Eldin Zaimovic's Graphic Adobe PhotoShop Logo Design Instagram Poster"
+          'Gael Courmont games portfolio'
       },
       { charset: 'utf-8' },
-      { property: 'og:title', content: "Eldin' Space" },
-      { property: 'og:site_name', content: "Eldin' Space" },
+      { property: 'og:title', content: "Gael' Space" },
+      { property: 'og:site_name', content: "Gael' Space" },
       { property: 'og:type', content: 'website' },
-      { property: 'og:url', content: 'https://eldin.space' },
-      {
-        property: 'og:game',
-        content: 'https://i.imgur.com/Dcz2PGx.jpg'
-      },
+      { property: 'og:url', content: 'https://gael.space' },
       {
         property: 'og:description',
         content:
-          "Eldin Zaimovic's Graphic Adobe PhotoShop Logo Design Instagram Poster"
+          'Gael Courmont games portfolio'
       }
     ]
   },
@@ -219,7 +215,21 @@ export default {
   font-size: x-large;
   justify-content: center;
 }
-.vid{
-  text-align: center;
+
+.iframe-wrapper {
+  position: relative;
+  height: 0;
+  padding-top: 56.25%;
+  overflow: hidden;
+  margin: 3%;
 }
+
+.iframe-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 </style>

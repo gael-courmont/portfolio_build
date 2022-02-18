@@ -3,7 +3,7 @@
     <VueCompareImage
       class="hidden-md-and-down"
       hover
-      :style="{ maxWidth: '1300px' }"
+      :style="{ maxWidth: '1000px' }"
       :sliderLineWidth="sliderLine"
       :handleSize="hSize"
       :leftImage="leftImage"
@@ -52,7 +52,7 @@
                 is passionate about
                 <span
                   class="green--text font-weight-bold"
-                >Video Games</span> and 
+                >Video Games</span> and
                 <span
                   class="green--text font-weight-bold"
                 >AI</span>, building great gaming experience,
@@ -99,52 +99,48 @@
 </template>
 
 <script>
-import { VueTyper } from "vue-typer";
-import VueCompareImage from "vue-compare-image";
+import { VueTyper } from 'vue-typer'
+import VueCompareImage from 'vue-compare-image'
 
 export default {
   metaInfo: {
-    title: "Home",
+    title: 'Home',
     titleTemplate: "%s ← Gael's Space",
     meta: [
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { name: "description", content: "Gael Courmont's Portfolio" },
-      { charset: "utf-8" },
-      { property: "og:title", content: "Gael' Space" },
-      { property: "og:site_name", content: "Gael' Space" },
-      { property: "og:type", content: "website" },
-      { property: "og:url", content: "https://Gael.space" },
-      {
-        property: "og:image",
-        content: "https://i.imgur.com/Dcz2PGx.jpg"
-      },
-      { property: "og:description", content: "Gael Courmont's Portfolio" }
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'description', content: "Gael Courmont's Portfolio" },
+      { charset: 'utf-8' },
+      { property: 'og:title', content: "Gael' Space" },
+      { property: 'og:site_name', content: "Gael' Space" },
+      { property: 'og:type', content: 'website' },
+      { property: 'og:url', content: 'https://Gael.space' },
+      { property: 'og:description', content: "Gael Courmont's Portfolio" }
     ]
   },
   components: {
-    "vue-typer": VueTyper,
+    'vue-typer': VueTyper,
     VueCompareImage
   },
-  data() {
+  data () {
     return {
       icons: [
-        { href: "https://github.com/gael-courmont", icon: "fab fa-github" },
+        { href: 'https://github.com/gael-courmont', icon: 'fab fa-github' },
         {
-          href: "https://www.linkedin.com/in/gael-courmont-8a7906167",
-          icon: "fab fa-linkedin-in"
+          href: 'https://www.linkedin.com/in/gael-courmont-8a7906167',
+          icon: 'fab fa-linkedin-in'
         }
       ],
-      text1: ["Front-End Developer", "Web Developer", "Web Designer"],
-      leftImage: "https://actualiteinformatique.fr/wp-content/uploads/2019/01/intelligence-artificielle-prédire-mort.jpg",
-      rightImage: "https://st3.depositphotos.com/1583745/16822/v/600/depositphotos_168220518-stock-illustration-cute-woman-farting-with-blank.jpg",
-      leftImage2: "https://actualiteinformatique.fr/wp-content/uploads/2019/01/intelligence-artificielle-prédire-mort.jpg",
-      rightImage2: "https://st3.depositphotos.com/1583745/16822/v/600/depositphotos_168220518-stock-illustration-cute-woman-farting-with-blank.jpg",
+      text1: ['AI', 'Game Development', 'Programmer'],
+      leftImage: 'https://wallpaperaccess.com/full/279979.jpg',
+      rightImage: 'https://www.wallpapertip.com/wmimgs/35-356026_artificial-intelligence-logo-design.jpg',
+      leftImage2: 'https://wallpaperaccess.com/full/279979.jpg',
+      rightImage2: 'https://www.wallpapertip.com/wmimgs/35-356026_artificial-intelligence-logo-design.jpg',
       sliderLine: 0,
       hSize: 0,
       sliderPosition: 0.5
-    };
+    }
   }
-};
+}
 </script>
 <style>
 @keyframes rocking {
@@ -179,4 +175,3 @@ export default {
   background-color: #e91e63;
 }
 </style>
-

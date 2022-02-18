@@ -136,32 +136,28 @@
 <script>
 export default {
   metaInfo: {
-    title: "Resume",
+    title: 'Resume',
     titleTemplate: "%s ← Gael's Space",
     meta: [
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
-        name: "description",
+        name: 'description',
         content:
-          "Vue NUXT HTML CSS JavaScript Design Adobe XD Photoshop Coding Skills Resume Work Web Developer Front-End"
+          'Unity Python Java C# Pytorch keras Vue'
       },
-      { charset: "utf-8" },
-      { property: "og:title", content: "Gael' Space" },
-      { property: "og:site_name", content: "Gael' Space" },
-      { property: "og:type", content: "website" },
-      { property: "og:url", content: "https://Gael.space" },
+      { charset: 'utf-8' },
+      { property: 'og:title', content: "Gael' Space" },
+      { property: 'og:site_name', content: "Gael' Space" },
+      { property: 'og:type', content: 'website' },
+      { property: 'og:url', content: 'https://Gael.space' },
       {
-        property: "og:image",
-        content: "https://i.imgur.com/Dcz2PGx.jpg"
-      },
-      {
-        property: "og:description",
+        property: 'og:description',
         content:
-          "Vue NUXT HTML CSS JavaScript Design Adobe XD Photoshop Coding Skills Resume Work Web Developer Front-End"
+          'Unity Python Java C# Pytorch keras Vue'
       }
     ]
   },
-  data() {
+  data () {
     return {
       value: 0,
       buffer1: 0,
@@ -172,30 +168,29 @@ export default {
       buffer6: 0,
       bufferValue: 100,
       interval: 0
-    };
+    }
   },
-  mounted() {
-    this.startBuffer();
+  mounted () {
+    this.startBuffer()
   },
 
-  beforeDestroy() {
-    clearInterval(this.interval);
+  beforeDestroy () {
+    clearInterval(this.interval)
   },
 
   methods: {
-    startBuffer() {
+    startBuffer () {
       this.interval = setInterval(() => {
-        this.buffer1 = 90;
-        this.buffer2 = 75;
-        this.buffer3 = 90;
-        this.buffer4 = 90;
-        this.buffer5 = 80;
-        this.buffer6 = 70;
-      }, 800);
+        this.buffer1 = 90
+        this.buffer2 = 75
+        this.buffer3 = 90
+        this.buffer4 = 90
+        this.buffer5 = 80
+        this.buffer6 = 70
+      }, 800)
     }
   }
-};
+}
 </script>
 <style >
 </style>
-
