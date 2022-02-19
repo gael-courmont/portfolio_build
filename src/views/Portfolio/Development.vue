@@ -100,7 +100,7 @@ export default {
           demo_image: 'https://i.imgur.com/gjq1yyQ.png',
           href: '',
           description: 'This website was done by my brother and I in order to show our work and in particular the production of video games.',
-          link: 'https://github.com/Alshkor/portefolioduq',
+          link: 'https://github.com/Alshkor/portfolio',
           role: 'Vue developer',
           tech: {
             tech1: 'Vue',
