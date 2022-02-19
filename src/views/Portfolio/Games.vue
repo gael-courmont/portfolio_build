@@ -1,7 +1,7 @@
 <template>
   <v-container grid-list-xl>
     <h2 class="pl-4">
-      <span>Graphic</span>
+      <span>Games</span>
       <span class="green--text">Portfolio</span>
     </h2>
     <v-layout row justify-center align-center wrap class="mt-4 pt-2">
@@ -84,7 +84,7 @@ export default {
       { property: 'og:title', content: "Gael' Space" },
       { property: 'og:site_name', content: "Gael' Space" },
       { property: 'og:type', content: 'website' },
-      { property: 'og:url', content: 'https://gael.space' },
+      { property: 'og:url', content: 'https://courmont-gael-portfolio.herokuapp.com' },
       {
         property: 'og:description',
         content:

@@ -80,7 +80,7 @@ export default {
       { property: 'og:title', content: "Eldin' Space" },
       { property: 'og:site_name', content: "Eldin' Space" },
       { property: 'og:type', content: 'website' },
-      { property: 'og:url', content: 'https://eldin.space' },
+      { property: 'og:url', content: 'https://courmont-gael-portfolio.herokuapp.com' },
       {
         property: 'og:description',
         content:

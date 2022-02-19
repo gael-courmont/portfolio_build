@@ -85,7 +85,7 @@ export default {
       { property: 'og:title', content: "Gael' Space" },
       { property: 'og:site_name', content: "Gael' Space" },
       { property: 'og:type', content: 'website' },
-      { property: 'og:url', content: 'https://Gael.space' },
+      { property: 'og:url', content: 'https://courmont-gael-portfolio.herokuapp.com' },
       {
         property: 'og:description',
         content: "Gael Courmont's AI portfolio"
