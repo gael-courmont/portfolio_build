@@ -99,7 +99,7 @@ export default {
           demo: false,
           demo_image: 'https://i.imgur.com/gjq1yyQ.png',
           href: '',
-          description: 'This website was made by my brother and i  in order to show our work and especially video game production.',
+          description: 'This website was done by my brother and I in order to show our work and in particular the production of video games.',
           link: 'https://github.com/Alshkor/portefolioduq',
           role: 'Vue developer',
           tech: {
@@ -116,7 +116,9 @@ export default {
           demo: false,
           demo_image: 'https://i.imgur.com/muwRayM.png',
           href: '',
-          description: 'Consulting website for league of legend player made in 2020 at ISEN by 5 student. We are using riot games api to fetch data about a player and give him advice according to his data analysis',
+          description: 'Consulting website for league of legend player made in 2020 at ISEN by 5 students.' +
+            ' We are using riot games API to fetch data about a player ' +
+            'and give him advice according to his data analysis',
           link: 'https://github.com/gael-courmont/LoremIpsum',
           role: 'Front end Developer',
           tech: {

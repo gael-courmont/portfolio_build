@@ -103,7 +103,8 @@ export default {
           poster: 'https://i.imgur.com/pqxqFIL.png',
           demo: true,
           href: 'https://youtube.com/embed/KYu0GYQfNEE',
-          description: 'Face the dangers of an eerie train with the help of an angel and a demon, and try to reach the exit ! Game made during the Global Game Jam 2022 by a team of 6. 2 graphic designer, 3 developers and 1 game designer',
+          description: 'Face the dangers of an eerie train with the help of an angel and a demon, and try to reach the exit !' +
+            ' Game made during the Global Game Jam 2022 by a team of 6. 2 graphic designer, 3 developers and 1 game designer',
           link: 'https://globalgamejam.org/2022/games/fireflies-express-1',
           role: 'Unity Developper',
           tech: {
@@ -117,7 +118,9 @@ export default {
           poster: 'https://i.imgur.com/Yo3nFht.jpg',
           demo: true,
           href: 'https://youtube.com/embed/imet3Kkd9sQ',
-          description: 'This project is a small and simple pool game made by myself and 2 other student at ISEN during an end of course project. The goal was to use every aspect of unity 3D development we learnt during that session',
+          description: 'This project is a small and simple pool game made by myself and 2 other students at ISEN during an end of course project.' +
+            ' The goal was to use every aspect of unity 3D development' +
+            ', we learnt during that session',
           link: 'https://github.com/gael-courmont/Unity_module',
           role: 'Unity Developer',
           tech: {
@@ -145,7 +148,8 @@ export default {
           poster: 'https://i.imgur.com/wv2v2bv.jpg',
           demo: false,
           href: '',
-          description: 'As a personal project i am developping a hack an slash type of game since it is one of my favorite type of game. I started devellopping it in early 2022.',
+          description: 'As a personal project I am developing a hack and slash type of game since' +
+            ' it is one of my favorite type of game. I started developing it in early 2022.',
           link: 'https://github.com/gael-courmont/Gurdil',
           role: 'Unity Developper',
           tech: {

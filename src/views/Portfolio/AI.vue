@@ -102,11 +102,10 @@ export default {
           poster: 'https://i.imgur.com/1MhuQLW.png?1',
           demo: true,
           href: 'https://youtube.com/embed/jEsRzpme1XA',
-          description: 'This project have been made for the computer vision course at ISEN.\n' +
-            '\n' +
-            'The project is to make a traffic count model in order to count the number of cars,bus etc passing througha line on a road.\n' +
-            '\n' +
-            'In order to achieve that we will mainly use a pretrained yolo model and a sort algorithm to track cars.',
+          description: 'This project has been made in the computer vision course at ISEN.' +
+            ' The goal is to make a traffic count model in order to count the number of cars, bus, etc' +
+            ' passing through a line on a road.' +
+            ' In order to achieve that we will mainly use a pretrained YOLO model and a sort algorithm to track cars.',
           link: 'https://colab.research.google.com/drive/1igAgpQZQFP0EHjm2hxBEQx4OrUyqupHz?usp=sharing',
           role: 'Alone project',
           tech: {
@@ -121,7 +120,9 @@ export default {
           demo: false,
           demo_image: 'https://i.imgur.com/p72XuJu.png',
           href: '',
-          description: 'Cats and dog recognition model made by 3 student at isen during 2021-2022 first semester. the goal was to make a poc and research about the best algorithm and technique of image classification available',
+          description: 'Cats and dogs recognition model made by 3 students at isen during 2021-2022 first semester.' +
+            ' The goal was to make a poc and research about' +
+            ' the best algorithm and technique available for image classification',
           link: 'https://github.com/gael-courmont/Cats_and_dogs_recognition',
           role: 'Developper',
           tech: {
@@ -132,14 +133,15 @@ export default {
         {
           dialog: false,
           title: 'Falling detection',
-          poster: 'https://i.imgur.com/isbVJv8.png',
+          poster: 'https://i.imgur.com/IfYh7rf.png',
           demo: false,
           demo_image: 'https://i.imgur.com/6GvNoG2.gif',
           href: '',
           description: 'A 6 week project made by a team of 4 ISEN student.' +
-            ' The goal here was to do a poc of an AI capable of recognizing dangerous comportement.' +
-            ' Moreover hidden goal was to test training an ai onto "virtual data". in that purpose we used unity to make data and train our AI onto it. ' +
-            'We focused on falling person detection since our model was destined to an homecare assistant.',
+            ' The goal here was to do a POC. We needed to train a dangerous behavior recognition model.' +
+            ' Moreover, hidden goal was to test training an AI onto "virtual data".' +
+            ' In that purpose we used unity to make data and train our AI onto it.' +
+            ' We focused on falling person detection since our model was destined to a home care assistant robot.',
           link: 'https://github.com/gael-courmont/Falling_detection/tree/main',
           role: 'Python/Unity Developper',
           tech: {
