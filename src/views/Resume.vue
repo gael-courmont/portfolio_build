@@ -119,7 +119,7 @@
       </v-flex>
       <div class="mt-4 pt-2">
         <v-btn
-          href="https://drive.google.com/file/d/1ehAUFWDYhre0hJ-C49_euAnEHCc907Yt/view?usp=sharing"
+          href="https://drive.google.com/file/d/1YMs-c9zWiR6Mj_9bCf7ShuRf1pZxB_Zu/view?usp=sharing"
           target="_blank"
           color="green"
           dark
