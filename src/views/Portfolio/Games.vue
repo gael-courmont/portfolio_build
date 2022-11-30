@@ -99,6 +99,21 @@ export default {
       project: [
         {
           dialog: false,
+          title: 'Etiolles traveller',
+          poster: 'https://i.imgur.com/5qFXzgO.png',
+          demo: true,
+          href: 'https://youtube.com/embed/KXmCMKfNCq8',
+          description: 'Play an archeologist that travels through time and learn how to live like a Magdalénien.!' +
+            ' Game made during the Global Game Jam 2022 by a team of developer and historian.',
+          link: 'https://youtu.be/KXmCMKfNCq8',
+          role: 'Unity Developper',
+          tech: {
+            tech1: 'UNITY',
+            tech2: '2D'
+          }
+        },
+        {
+          dialog: false,
           title: 'The Fireflies Express',
           poster: 'https://i.imgur.com/pqxqFIL.png',
           demo: true,

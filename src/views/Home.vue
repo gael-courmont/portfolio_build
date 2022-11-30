@@ -48,7 +48,7 @@
             </h3>
             <div>
               <p>
-                Hello! I’m Gael Courmont. I'm a Engineering student who
+                Hello! I’m Gael Courmont. I'm a freshly graduated engineer who
                 is passionate about
                 <span
                   class="green--text font-weight-bold"
